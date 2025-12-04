@@ -34,6 +34,7 @@ OVMF_DIR="."
 # shellcheck disable=SC2054
 args=(
   # -enable-kvm -m "$ALLOCATED_RAM" -cpu Penryn,kvm=on,vendor=GenuineIntel,+invtsc,vmware-cpuid-freq=on,"$MY_OPTIONS"
+  # -cpu Skylake-Client,kvm=on,vendor=GenuineIntel,+invtsc,+hypervisor,-pcid,-hle,-rtm
   -enable-kvm -m "$ALLOCATED_RAM" -cpu Skylake-Client-IBRS,kvm=on,vendor=GenuineIntel,+invtsc,+hypervisor,-pcid,vmware-cpuid-freq=on,"$MY_OPTIONS"
   -machine q35
   -device qemu-xhci,id=xhci

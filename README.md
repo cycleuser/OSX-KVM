@@ -54,7 +54,7 @@ help (pull-requests!) with the following work items:
 * A CPU with AVX2 support is required for >= macOS Ventura
 
 Note: Older AMD CPU(s) are known to be problematic but modern AMD Ryzen
-processors work just fine (even for macOS Sonoma).
+processors work just fine (even for macOS Tahoe).
 
 
 ### Installation Preparation
