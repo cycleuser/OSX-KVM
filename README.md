@@ -75,7 +75,7 @@ processors work just fine (even for macOS Sonoma).
   ```
   cd ~
 
-  git clone --depth 1 --recursive https://github.com/kholia/OSX-KVM.git
+  git clone --depth 1 --recursive https://github.com/cycleuser/OSX-KVM.git
 
   cd OSX-KVM
   ```
@@ -140,7 +140,7 @@ processors work just fine (even for macOS Sonoma).
   8. Sequoia (15)
   9. Tahoe (26)
 
-  Choose a product to download (1-9): 7
+  Choose a product to download (1-9): 9
   ```
 
   Note: Modern NVIDIA GPUs are supported on HighSierra but not on later
@@ -157,7 +157,7 @@ processors work just fine (even for macOS Sonoma).
   will need to be updated to point to the new image name.
 
   ```
-  qemu-img create -f qcow2 mac_hdd_ng.img 256G
+  qemu-img create -f qcow2 mac_hdd_ng.img 512G
   ```
 
   NOTE: Create this HDD image file on a fast SSD/NVMe disk for best results.
@@ -171,7 +171,7 @@ processors work just fine (even for macOS Sonoma).
   installation process.
 
   ```
-  ./OpenCore-Boot.sh
+  ./OpenCore-Boot-new.sh
   ```
 
   Note: This same script works for all recent macOS versions.
@@ -181,6 +181,10 @@ processors work just fine (even for macOS Sonoma).
   for modern macOS versions.
 
 - Go ahead, and install macOS 🙌
+
+The original `OpenCore-Boot.sh` script is a bit old and has been replaced by 'OpenCore-Boot-new.sh'. The new script is tested on AMD Ryzen 9 7955HX with Ubuntu 24.04 as screen shot below.
+
+![](./screenshots/osx-kvm-amd.png)
 
 - (OPTIONAL) Use this macOS VM disk with libvirt (virt-manager / virsh stuff).
 
